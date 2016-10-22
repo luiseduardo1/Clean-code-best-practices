@@ -70,4 +70,11 @@ Clean code principles taken mostly from book [Clean Code: A Handbook of Agile So
         - You may not write production code until you have a written a failing unit test
         - You may not write more of a unit test than is sufficient to fail, and not compilling is failing
         - You may not write more production code than is sufficient to pass the currently failing test
+    - Should respect the cycle of TDD:
+        - 1 : Write a test that fails
+        - 2 : Make the test pass with the minimum code necessary
+        - 3 : Refactor the code without adding new functionalities in the code
+        - A cycle should last between 20 second and 2 minutes
+    - Should test the desired comportment and not the code, what is the state that is desired
+    - Each test should test a behavior and not a function
 
