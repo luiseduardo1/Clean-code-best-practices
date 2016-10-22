@@ -1,7 +1,7 @@
-# Clean Code Principles
+# Clean Code Best Practices
 Clean code principles taken mostly from book [Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin](http://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). These are just my notes that i want to keep in mind.
 
-## Main Principles:
+## Main Practices:
 - **Meaningful Names**
     - Should use one word per concept
     - Should use solution Domain Names
