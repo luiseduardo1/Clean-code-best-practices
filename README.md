@@ -2,12 +2,11 @@
 Clean code principles taken mostly from book [Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin](http://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). These are just my notes that i want to keep in mind.
 
 # Main Principles:
-
-- Meaningful Names
-    - Pick one word per concept
+- **Meaningful Names**
+   - Pick one word per concept
     - Use solution domain Names
     - Use problem Domain Names
-- Functions
+- **Functions**
     - Must be small
     - Should do only one thing
         - A way to know a function is doing more than one thing is if you can extract another function from it with a name that is not merely a restatement o its implementation
@@ -26,11 +25,12 @@ Clean code principles taken mostly from book [Clean Code: A Handbook of Agile So
         - Good:
     - Return exceptions instead of error codes
     - Should extract try/catch block in a function that does only that
-- Comments
-- Formatting
-- Objects and Data Structures
-- Error Handling
-- TDD
+
+- **Comments**
+- **Formatting**
+- **Objects and Data Structures**
+- **Error Handling**
+- **TDD**
     - Must respect three laws
         - You may not write production code until you have a written a failing unit test
         - You may not write more of a unit test than is sufficient to fail, and not compilling is failing
