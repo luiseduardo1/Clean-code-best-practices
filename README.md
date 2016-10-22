@@ -1,9 +1,9 @@
 # Clean-code-principles
-- Meaningful Names
+- **Meaningful Names**
     - Pick one word per concept
     - Use solution domain Names
     - Use problem Domain Names
-- Functions
+- **Functions**
     - Must be small
     - Should do only one thing
         - A way to know a function is doing more than one thing is if you can extract another function from it with a name that is not merely a restatement o its implementation
@@ -13,11 +13,11 @@
     - Should have no side effect
     - Should respect Command Query Separation
     - Return exceptions instead of error codes
-- Comments
-- Formatting
-- Objects and Data Structures
-- Error Handling
-- TDD
+- **Comments**
+- **Formatting**
+- **Objects and Data Structures**
+- **Error Handling**
+- **TDD**
     - Must respect three laws
         - You may not write production code until you have a written a failing unit test
         - You may not write more of a unit test than is sufficient to fail, and not compilling is failing
