@@ -1,22 +1,24 @@
-# Clean Code Principles
+# Clean Code Best Practices
 Clean code principles taken mostly from book [Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin](http://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). These are just my notes that i want to keep in mind.
 
-## Main Principles:
+## Main Practices:
 - **Meaningful Names**
     - Should use one word per concept
     - Should use solution Domain Names
+        - Use computer science terms, algorithms, pattern names, math terms and so forth when programmer will be reading your code
     - Should use problem Domain Names
+        - Use the name from the problem domain when there is no programmer for what you are doing
 
 - **Functions**
     - Must be small
     - Should do only one thing
         - A way to know a function is doing more than one thing is if you can extract another function from it with a name that is not merely a restatement o its implementation
-        - The statements within our function are all at the same level of abstraction 
-        - Error handling is one thing, thus a function that does error handling shouldn't do anything :else
+        - The statements within the function are all at the same level of abstraction 
+        - Error handling is one thing, thus a function that does error handling shouldn't do anything else
             - Tip: If there is a "try" in a function it should be the first word in the function and there shoudln't be anything after the catch/finally blockls
     - Should have one level or two level of abstractions(indentations) 
     - Ideally should have zero argument, could have one or at most two
-    - Should have no side effect
+    - Shouldn't have side effect
     - Shouldn't receive a boolean (flag arguments) as argument
     - Shouldn't abuse the use of switch statements
         - Switch statements can be tolerate if they appear only once, are used to create polymorphic objects, and are hidden behind an inheritance
@@ -26,11 +28,9 @@ Clean code principles taken mostly from book [Clean Code: A Handbook of Agile So
                    public boolean set(String attribute, String value);
                    ```
         - Good: ```
-                  if (attributeExists("username")) {
-                  setAttribute("username", "unclebob");
-                  }
-                  ...
-                       ``` 
+                  if (attributeExists("username")) { setAttribute("username", "unclebob");
+                  } ...
+                      ``` 
     - Should extract try/catch block in a function that does only that
 
 - **Comments**
