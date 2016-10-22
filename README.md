@@ -1,1 +1,16 @@
 # Clean-code-principles
+- Meaningful Names
+    - Pick one word per concept
+    - Use solution domain Names
+    - Use problem Domain Names
+- Functions
+    - Must be small
+    - Should have one level or two level of abstractions
+    - Ideally should have zero arguments or just one
+    - Should have no side effect
+    - Should respect Command Query Separation
+    - Return exceptions instead of error codes
+- Comments
+- Formatting
+- Objects and Data Structures
+- Error Handling
