@@ -12,7 +12,7 @@ Clean code principles taken mostly from book [Clean Code: A Handbook of Agile So
     - Should do only one thing
         - A way to know a function is doing more than one thing is if you can extract another function from it with a name that is not merely a restatement o its implementation
         - The statements within our function are all at the same level of abstraction 
-        - Error handling is one thing, thus a function that does error handling shouldn't do anything else
+        - Error handling is one thing, thus a function that does error handling shouldn't do anything :else
             - Tip: If there is a "try" in a function it should be the first word in the function and there shoudln't be anything after the catch/finally blockls
     - Should have one level or two level of abstractions(indentations) 
     - Ideally should have zero argument, could have one or at most two
@@ -31,7 +31,6 @@ Clean code principles taken mostly from book [Clean Code: A Handbook of Agile So
                   }
                   ...
                        ``` 
-    - Return exceptions instead of error codes
     - Should extract try/catch block in a function that does only that
 
 - **Comments**
@@ -59,8 +58,15 @@ Clean code principles taken mostly from book [Clean Code: A Handbook of Agile So
         - The law allows to avoid Train Wrecks
 
 - **Error Handling**
-- **TDD**
-    - Must respect three laws:
+    - Return exceptions instead of error codes
+    - You should write your Try-Catch-Finally statement first
+    - You should wrap third-party APIs to minimize dependencies upon it
+    - You shouldn't return null
+        - Instead throw an exception or return SPECIAL CASE object
+    - You shouldn't pass null into methods
+
+- **Unit tests**
+    - Should respect the Three Laws of TDD:
         - You may not write production code until you have a written a failing unit test
         - You may not write more of a unit test than is sufficient to fail, and not compilling is failing
         - You may not write more production code than is sufficient to pass the currently failing test
