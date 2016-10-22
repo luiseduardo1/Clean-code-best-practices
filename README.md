@@ -22,8 +22,15 @@ Clean code principles taken mostly from book [Clean Code: A Handbook of Agile So
         - Switch statements can be tolerate if they appear only once, are used to create polymorphic objects, and are hidden behind an inheritance
     - Should respect Command Query Separation
         - Functions should either do something or answer something, but not boith. The function should change the state of an object, or it should return some information about the object, if it does both it leads to confusion
-        - Bad:
-        - Good:
+        - Bad:  ```
+                   public boolean set(String attribute, String value);
+                   ```
+        - Good: ```
+                  if (attributeExists("username")) {
+                  setAttribute("username", "unclebob");
+                  }
+                  ...
+                       ``` 
     - Return exceptions instead of error codes
     - Should extract try/catch block in a function that does only that
 
