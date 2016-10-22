@@ -5,7 +5,10 @@
     - Use problem Domain Names
 - Functions
     - Must be small
-    - Should have one level or two level of abstractions
+    - Should do only one thing
+        - A way to know a function is doing more than one thing is if you can extract another function from it with a name that is not merely a restatement o its implementation
+        - The statements within our function are all at the same level of abstraction 
+    - Should have one level or two level of abstractions(indentations) 
     - Ideally should have zero arguments or just one
     - Should have no side effect
     - Should respect Command Query Separation
@@ -14,3 +17,9 @@
 - Formatting
 - Objects and Data Structures
 - Error Handling
+- TDD
+    - Must respect three laws
+        - You may not write production code until you have a written a failing unit test
+        - You may not write more of a unit test than is sufficient to fail, and not compilling is failing
+        - You may not write more production code than is sufficient to pass the currently failing test
+
